@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Card Example</title>
+
+    <!-- Google Fonts: importing a nicer font than the default -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset default spacing so our layout is predictable */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* padding/border no longer add to width */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5; /* light gray page background */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* modern replacement for <center> tag */
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .movie-card {
+            width: 280px;
+            background-color: #ffffff; /* white card, not red */
+            border-radius: 16px; /* rounded corners */
+            overflow: hidden; /* keeps the image corners rounded too */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* soft shadow = depth */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
+        }
+
+        /* Runs only when mouse hovers over the card */
+        .movie-card:hover {
+            transform: translateY(-8px); /* lifts the card up slightly */
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover; /* fills the box without stretching/distorting */
+            display: block;
+        }
+
+        .card-content {
+            padding: 18px;
+        }
+
+        .movie-card h2 {
+            font-size: 20px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .rating {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #fff4d6;
+            color: #b8860b;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 4px 10px;
+            border-radius: 20px; /* pill shape */
+            margin-bottom: 10px;
+        }
+
+        .genre {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .book-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #e50914; /* classic "movie" red, just on the button */
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer; /* shows a hand icon so it feels clickable */
+            transition: background-color 0.2s ease;
+        }
+
+        .book-btn:hover {
+            background-color: #b80710; /* darker red on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Card Example</h1>
+
+    <div class="movie-card">
+        <img src="./sheep.png" alt="Sheep Detectives movie poster">
+        <div class="card-content">
+            <h2>Sheep Detective</h2>
+            <span class="rating">⭐ 7.5/10</span>
+            <p class="genre">Drama · Comedy</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+    </div>
+
+</body>
+</html>
