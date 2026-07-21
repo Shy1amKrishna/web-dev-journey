@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+   <center>
+     <table border="2px" align="center">
+   
+        <tr>
+            <th>Player</th>
+            <th>No Of Centuries</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td><img src="/FxrolxVacAAI5KH.jpg" alt="Virat Kohli" width="60" height="60"><br>
+                Virat Kohli</td>
+            <td>85</td>
+            <td>38</td>
+            </tr>
+            <td><img src="/shubman.jpg" alt="Virat Kohli" width="60" height="60"><br>
+                Shubman Gill</td>
+            <td>20</td>
+            <td>26</td>
+            </tr>
+            <td><img src="/rohith.jpg" alt="Virat Kohli" width="60" height="60"><br>
+                Rohith Sharma</td>
+            <td>51</td>
+            <td>39</td>
+            </tr>
+            <td><img src="/ravi.jpg" alt="Virat Kohli" width="60" height="60"><br>
+                Ravindra Jadeja</td>
+            <td>4</td>
+            <td>37</td>
+        </tr>
+    </table>
+   </center>
+</body>
+</html>
