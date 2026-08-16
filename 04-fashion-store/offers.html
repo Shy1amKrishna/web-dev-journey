@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+        #offerbox{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .offercard{
+            border: 2px solid rgb(249, 35, 71);
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            background-color: #fff8f8;
+        }
+        .offercard h3{
+            color: rgb(249, 35, 71);
+            margin: 5px 0;
+        }
+        #pricetable{
+            margin: 20px auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        #pricetable th, #pricetable td{
+            border: 1px solid #ccc;
+            padding: 10px 25px;
+        }
+        #pricetable th{
+            background-color: rgb(249, 35, 71);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(249, 35, 71);">STYLEHUB</h1>
+        <h3 style="color: white;font: italic;">Fashion For Everyone</h3>
+        <nav>
+            <a href="home.html" style="color: white;">Home</a>&nbsp;&nbsp;
+            <a href="man.html" style="color: white;">Man </a>&nbsp;&nbsp;
+            <a href="woman.html"style="color: white;">Women</a>&nbsp;&nbsp;
+            <a href="offers.html"style="color: white;">Offers</a>&nbsp;&nbsp;
+            <a href="about.html"style="color: white;">About</a>&nbsp;&nbsp;
+            <a href="contact.html"style="color: white;">Contact</a>&nbsp;&nbsp;
+        </nav>
+    </header>
+
+    <h1 style="color: rgb(249, 35, 71);text-align: center;">🔥 Today's Best Offers</h1>
+
+    <div id="offerbox">
+        <div class="offercard">
+            <h3>🛍️ 50% OFF</h3>
+            <p>On selected men's T-shirts</p>
+            <a href="">Shop Now</a>
+        </div>
+        <div class="offercard">
+            <h3>👗 40% OFF</h3>
+            <p>On selected women's dresses</p>
+            <a href="">Shop Now</a>
+        </div>
+        <div class="offercard">
+            <h3>🎉 BUY 2 GET 1</h3>
+            <p>On selected casual wear</p>
+            <a href="">Explore Collection</a>
+        </div>
+    </div>
+
+    <h2 style="text-align: center;color: rgb(249, 35, 71);">💰 Special Pricing</h2>
+    <table id="pricetable">
+        <tr>
+            <th>Product</th>
+            <th>Original Price</th>
+            <th>Offer Price</th>
+        </tr>
+        <tr>
+            <td>Classic T-Shirt</td>
+            <td>&#8377;999</td>
+            <td>&#8377;799</td>
+        </tr>
+        <tr>
+            <td>Denim Jeans</td>
+            <td>&#8377;1,999</td>
+            <td>&#8377;1,499</td>
+        </tr>
+        <tr>
+            <td>Summer Dress</td>
+            <td>&#8377;1,799</td>
+            <td>&#8377;1,299</td>
+        </tr>
+    </table>
+
+    <footer style="text-align: center;background-color: black;color: white;padding: 15px;margin-top: 30px;">
+        <h3>&copy;STYLEHUB 2026</h3>
+        <p>Fashion &bull; Quality &bull; Style</p>
+    </footer>
+</body>
+</html>
