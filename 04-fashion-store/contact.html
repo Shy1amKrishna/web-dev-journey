@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+        #contactform{
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #contactform label{
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        #contactform input, #contactform select, #contactform textarea{
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #contactform button{
+            margin-top: 15px;
+            padding: 10px 25px;
+            background-color: rgb(249, 35, 71);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #storebox{
+            text-align: center;
+            margin: 30px 0;
+        }
+        #storebox p{
+            font-size: 18px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(249, 35, 71);">STYLEHUB</h1>
+        <h3 style="color: white;font: italic;">Fashion For Everyone</h3>
+        <nav>
+            <a href="home.html" style="color: white;">Home</a>&nbsp;&nbsp;
+            <a href="man.html" style="color: white;">Man </a>&nbsp;&nbsp;
+            <a href="woman.html"style="color: white;">Women</a>&nbsp;&nbsp;
+            <a href="offers.html"style="color: white;">Offers</a>&nbsp;&nbsp;
+            <a href="about.html"style="color: white;">About</a>&nbsp;&nbsp;
+            <a href="contact.html"style="color: white;">Contact</a>&nbsp;&nbsp;
+        </nav>
+    </header>
+
+    <h1 style="color: rgb(249, 35, 71);text-align: center;">Get In Touch</h1>
+
+    <form id="contactform">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone number">
+
+        <label>Subject</label>
+        <select>
+            <option>Order Related</option>
+            <option>General Query</option>
+            <option>Feedback</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="5" placeholder="Type your message"></textarea>
+
+        <br>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <h2 style="text-align: center;color: rgb(249, 35, 71);">📍 Store Information</h2>
+    <div id="storebox">
+        <p>📍 MG Road,Kochi,Kerala</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 support@stylehub.com</p>
+        <p>🕒 Monday - Saturday: 9 AM - 8 PM</p>
+    </div>
+
+    <footer style="text-align: center;background-color: black;color: white;padding: 15px;margin-top: 30px;">
+        <h3>&copy;STYLEHUB 2026</h3>
+        <p>Fashion &bull; Quality &bull; Style</p>
+    </footer>
+</body>
+</html>
